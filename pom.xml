@@ -52,11 +52,7 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-<<<<<<< HEAD
 			<version>42.7.3</version>
-=======
-			<version>42.2.5</version>
->>>>>>> f91611dcfb8e9573e4a4483474d2216d121e86a7
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
