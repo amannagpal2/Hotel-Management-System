@@ -5,7 +5,7 @@ services:
      build:
        context: .
        dockerfile: dockerfile1
-     entrypoint: ["java","-jar","/Hotel.jar"]
+     entrypoint: ["java","-jar","target/Hotel.jar"]
      ports:
       - "9090:8089"
      depends_on:
