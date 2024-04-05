@@ -1,0 +1,15 @@
+# Use the official OpenJDK 8 image as the base image
+FROM openjdk:8
+
+# Update package repositories and install Maven
+RUN apt-get update && \
+    apt-get install -y maven && \
+    apt-get clean;
+
+# Display Maven version information
+#RUN mvn -version
+EXPOSE 8089
+# Set the working directory for Maven builds
+
+
+COPY target/Hotel.jar .
