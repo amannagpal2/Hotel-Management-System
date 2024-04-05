@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+   jar:
+     build:
+       context: ./src
+     entrypoint: ["java","-jar","/Hotel.jar"]
+     ports:
+      - "9090:8089"
+     depends_on:
+        - db
+   db:
+    build:
+      context: .
