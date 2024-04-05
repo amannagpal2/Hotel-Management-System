@@ -10,6 +10,9 @@ RUN apt-get update && \
 #RUN mvn -version
 EXPOSE 8089
 # Set the working directory for Maven builds
+RUN mkdir -p /app
 
-
-COPY target/Hotel.jar .
+COPY src /app/src
+COPY pom.xml /app/
+COPY target /app/target
+WORKDIR /app
