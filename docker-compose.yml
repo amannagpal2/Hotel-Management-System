@@ -4,6 +4,7 @@ services:
    jar:
      build:
        context: .
+       dockerfile: dockerfile1
      entrypoint: ["java","-jar","/Hotel.jar"]
      ports:
       - "9090:8089"
@@ -12,6 +13,3 @@ services:
    db:
     build:
       context: .
-      dockerfile: dockerfile1
-
-
